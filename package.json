@@ -1,0 +1,50 @@
+{
+  "name": "new-project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "set DEBUG=server, server:* && nodemon server.js",
+    "lint:init": "eslint --init",
+    "lint": "eslint server.js"
+  },
+  "author": "Rohan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "bootstrap": "4.3.1",
+    "chalk": "2.4.2",
+    "cookie-parser": "1.4.4",
+    "debug": "4.1.1",
+    "ejs": "2.6.1",
+    "express": "4.17.0",
+    "express-session": "1.16.1",
+    "jquery": "3.4.1",
+    "mongodb": "3.2.7",
+    "morgan": "1.9.1",
+    "mssql": "5.1.0",
+    "mysql": "2.17.1",
+    "open": "6.3.0",
+    "passport": "0.4.0",
+    "passport-local": "1.0.0",
+    "popper.js": "1.15.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000
+    }
+  }
+}
